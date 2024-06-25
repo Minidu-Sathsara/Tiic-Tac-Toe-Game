@@ -24,5 +24,21 @@ cells.forEach((cell) => {
         crossPlaying = !crossPlaying;
     });
     });
+
+    const checkWin=(player) =>{
+        const winningCombos=[
+            //horizontal
+            [[0,0],[0,1],[0,2]],
+            [[1,0],[1,1],[1,2]],
+            [[2,0],[2,1],[2,2]],
+            //vertical
+            [[0,0],[1,0],[2,0]],
+            [[0,0],[1,0],[2,1]],
+            [[0,2],[1,2],[2,2]],
+            //cross
+            [[0,0],[1,1],[2,2]],
+            [[2,0],[1,1],[0,2]],
+        ];
+    }
         
     
